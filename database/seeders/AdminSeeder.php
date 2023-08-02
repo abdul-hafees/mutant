@@ -16,11 +16,11 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        Admin::where('email', 'admin@zedeo.com')->delete();
+        Admin::where('email', 'admin@gmail.com')->delete();
 
         $admin = Admin::create([
             'name' => 'Admin',
-            'email' => "admin@zedeo.com",
+            'email' => "admin@gmail.com",
             'email_verified_at' => now(),
             'password' => bcrypt("password"), // password
             'remember_token' => Str::random(10),

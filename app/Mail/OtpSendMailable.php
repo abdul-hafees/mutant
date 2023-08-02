@@ -36,7 +36,7 @@ class OtpSendMailable extends Mailable
         $attributes =  $this->attributes;
 
         return $this->to($this->attributes['email'])
-            ->subject('ZEDEO - OTP LOGIN')
+            ->subject('OTP LOGIN')
             ->view('emails.otp',
                 compact('attributes'));
 

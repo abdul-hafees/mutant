@@ -11,7 +11,6 @@
       <i class="icon wb-more-horizontal" aria-hidden="true"></i>
     </button>
     <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-      <img class="navbar-brand-logo" src="{{ asset('assets/admin/images/zedeo_white.svg') }}" title="Zedio">
     </div>
 {{--    <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-search"--}}
 {{--      data-toggle="collapse">--}}

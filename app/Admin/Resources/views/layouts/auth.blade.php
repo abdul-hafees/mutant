@@ -22,7 +22,6 @@
             <div class="panel-body">
                 @section('header')
                     <div class="brand">
-                        <img class="brand-img" src="{{ asset('assets/admin/images/zedeo.png') }}" style="width: 200px" alt="zedeo">
 {{--                        <h2 class="brand-text font-size-18">{{ config('app.name') }} </h2>--}}
                     </div>
                 @show
