@@ -51,15 +51,15 @@
                 <!-- Begin carousel item
                 ========================= -->
                 <div class="cc-item parallax bg-image"
-                     style="background-image: url(public/frontend/img/intro/intro-bg-1.jpg); background-position: 50% 50%;"
+                     style="background-image: url({{ \App\Helpers\Helper::getValue('wallpaper_1') }}); background-position: 50% 50%;"
                      data-percent-height="0.9">
 
                     <!-- Begin caption -->
                     <div class="cc-caption intro-caption bottom-left caption-animate">
-                        <h1 class="intro-title">Welcome!<br>We Are Waldo</h1>
+                        <h1 class="intro-title">{{ \App\Helpers\Helper::getValue('wallpaper_1_title') }}</h1>
                         <div class="intro-sub-title-wrap max-width-400"> <!-- max width class is optional -->
                             <h2 class="intro-sub-title">
-                                We are a creative design company that creates a really cool projects. :)
+                                {{ \App\Helpers\Helper::getValue('wallpaper_1_description') }}
                             </h2>
                         </div>
                     </div>
@@ -71,15 +71,15 @@
                 <!-- Begin carousel item
                 ========================= -->
                 <div class="cc-item parallax bg-image"
-                     style="background-image: url(/public/frontend/img/intro/intro-bg-2.jpg); background-position: 50% 50%;"
+                     style="background-image: url({{ \App\Helpers\Helper::getValue('wallpaper_2') }}); background-position: 50% 50%;"
                      data-percent-height="0.9">
 
                     <!-- Begin caption -->
                     <div class="cc-caption intro-caption bottom-left caption-animate">
-                        <h1 class="intro-title">Cool<br>Headphones</h1>
+                        <h1 class="intro-title">{{ \App\Helpers\Helper::getValue('wallpaper_2_title') }}</h1>
                         <div class="intro-sub-title-wrap">
                             <h2 class="intro-sub-title">
-                                A new level of sound.
+                                {{ \App\Helpers\Helper::getValue('wallpaper_2_description') }}
                             </h2>
                         </div>
                     </div>
@@ -91,15 +91,15 @@
                 <!-- Begin carousel item
                 ========================= -->
                 <div class="cc-item parallax bg-image"
-                     style="background-image: url(public/frontend/img/intro/intro-bg-3.jpg); background-position: 50% 55%;"
+                     style="background-image: url({{ \App\Helpers\Helper::getValue('wallpaper_3') }}); background-position: 50% 55%;"
                      data-percent-height="0.9">
 
                     <!-- Begin caption -->
                     <div class="cc-caption intro-caption bottom-left caption-animate">
-                        <h1 class="intro-title">The Old<br>Typewriter</h1>
+                        <h1 class="intro-title">{{ \App\Helpers\Helper::getValue('wallpaper_3_title') }}</h1>
                         <div class="intro-sub-title-wrap">
                             <h2 class="intro-sub-title">
-                                How cool is that?
+                                {{ \App\Helpers\Helper::getValue('wallpaper_3_description') }}
                             </h2>
                         </div>
                     </div>
@@ -162,10 +162,10 @@
 
                             <!-- Begin portfolio list item -->
                             <a href="portfolio-single-1.html" class="portfolio-list-item bg-image"
-                               style="background-image: url(public/frontend/img/porfolio/portfolio-2.jpg); background-position: 50% 50%">
+                               style="background-image: url({{ \App\Helpers\Helper::getValue('gallery_1') }}); background-position: 50% 50%">
                                 <div class="pli-hover">
                                     <div class="pli-caption">
-                                        <div><h2 class="pli-title">Beer Six Back</h2></div>
+                                        <div><h2 class="pli-title">{{ \App\Helpers\Helper::getValue('gallery_1_title') }}</h2></div>
                                         <div><span class="pli-category">Print</span></div>
                                     </div>
                                     <div class="pli-arrow"></div>
@@ -185,10 +185,10 @@
 
                             <!-- Begin portfolio list item -->
                             <a href="portfolio-single-2.html" class="portfolio-list-item bg-image"
-                               style="background-image: url(public/frontend/img/porfolio/portfolio-1.jpg); background-position: 50% 50%">
+                               style="background-image: url({{ \App\Helpers\Helper::getValue('gallery_2') }}); background-position: 50% 50%">
                                 <div class="pli-hover">
                                     <div class="pli-caption">
-                                        <div><h2 class="pli-title">Sushi Bar</h2></div>
+                                        <div><h2 class="pli-title">{{ \App\Helpers\Helper::getValue('gallery_2_title') }}</h2></div>
                                         <div><span class="pli-category">Print, Motion</span></div>
                                     </div>
                                     <div class="pli-arrow"></div>
@@ -208,10 +208,10 @@
 
                             <!-- Begin portfolio list item -->
                             <a href="portfolio-single-3.html" class="portfolio-list-item bg-image"
-                               style="background-image: url(public/frontend/img/porfolio/portfolio-3.jpg); background-position: 50% 50%">
+                               style="background-image: url({{ \App\Helpers\Helper::getValue('gallery_3') }}); background-position: 50% 50%">
                                 <div class="pli-hover">
                                     <div class="pli-caption">
-                                        <div><h2 class="pli-title">Armenian Inventors</h2></div>
+                                        <div><h2 class="pli-title">{{ \App\Helpers\Helper::getValue('gallery_3_title') }}</h2></div>
                                         <div><span class="pli-category">Print</span></div>
                                     </div>
                                     <div class="pli-arrow"></div>
@@ -231,10 +231,10 @@
 
                             <!-- Begin portfolio list item -->
                             <a href="portfolio-single-4.html" class="portfolio-list-item bg-image"
-                               style="background-image: url(public/frontend/img/porfolio/portfolio-5.jpg); background-position: 50% 50%">
+                               style="background-image: url({{ \App\Helpers\Helper::getValue('gallery_4') }}); background-position: 50% 50%">
                                 <div class="pli-hover">
                                     <div class="pli-caption">
-                                        <div><h2 class="pli-title">The 13th High Fest</h2></div>
+                                        <div><h2 class="pli-title">{{ \App\Helpers\Helper::getValue('gallery_4_title') }}</h2></div>
                                         <div><span class="pli-category">Print</span></div>
                                     </div>
                                     <div class="pli-arrow"></div>
@@ -254,10 +254,10 @@
 
                             <!-- Begin portfolio list item -->
                             <a href="portfolio-single-5.html" class="portfolio-list-item bg-image"
-                               style="background-image: url(public/frontend/img/porfolio/portfolio-4.jpg); background-position: 50% 50%">
+                               style="background-image: url({{ \App\Helpers\Helper::getValue('gallery_5') }}); background-position: 50% 50%">
                                 <div class="pli-hover">
                                     <div class="pli-caption">
-                                        <div><h2 class="pli-title">Prometey Bank Annual Report 2011</h2></div>
+                                        <div><h2 class="pli-title">{{ \App\Helpers\Helper::getValue('gallery_5_title') }}</h2></div>
                                         <div><span class="pli-category">Web Design, Motion</span></div>
                                     </div>
                                     <div class="pli-arrow"></div>
@@ -277,10 +277,10 @@
 
                             <!-- Begin portfolio list item -->
                             <a href="portfolio-single-2.html" class="portfolio-list-item bg-image"
-                               style="background-image: url(public/frontend/img/porfolio/portfolio-8.jpg); background-position: 50% 50%">
+                               style="background-image: url({{ \App\Helpers\Helper::getValue('gallery_6') }}); background-position: 50% 50%">
                                 <div class="pli-hover">
                                     <div class="pli-caption">
-                                        <div><h2 class="pli-title">Metarez Lasminar</h2></div>
+                                        <div><h2 class="pli-title">{{ \App\Helpers\Helper::getValue('gallery_6_title') }}</h2></div>
                                         <div><span class="pli-category">Web Design</span></div>
                                     </div>
                                     <div class="pli-arrow"></div>
@@ -300,10 +300,10 @@
 
                             <!-- Begin portfolio list item -->
                             <a href="portfolio-single-6.html" class="portfolio-list-item bg-image"
-                               style="background-image: url(public/frontend/img/porfolio/portfolio-7.jpg); background-position: 50% 50%">
+                               style="background-image: url({{ \App\Helpers\Helper::getValue('gallery_7') }}); background-position: 50% 50%">
                                 <div class="pli-hover">
                                     <div class="pli-caption">
-                                        <div><h2 class="pli-title">Day &amp; Night</h2></div>
+                                        <div><h2 class="pli-title">{{ \App\Helpers\Helper::getValue('gallery_7_title') }}</h2></div>
                                         <div><span class="pli-category">Photography</span></div>
                                     </div>
                                     <div class="pli-arrow"></div>
@@ -323,10 +323,10 @@
 
                             <!-- Begin portfolio list item -->
                             <a href="portfolio-single-3.html" class="portfolio-list-item bg-image"
-                               style="background-image: url(public/frontend/img/porfolio/portfolio-9.jpg); background-position: 50% 50%">
+                               style="background-image: url({{ \App\Helpers\Helper::getValue('gallery_8') }}); background-position: 50% 50%">
                                 <div class="pli-hover">
                                     <div class="pli-caption">
-                                        <div><h2 class="pli-title">Altimos Tereck</h2></div>
+                                        <div><h2 class="pli-title">{{ \App\Helpers\Helper::getValue('gallery_8_title') }}</h2></div>
                                         <div><span class="pli-category">Photography</span></div>
                                     </div>
                                     <div class="pli-arrow"></div>
@@ -346,10 +346,10 @@
 
                             <!-- Begin portfolio list item -->
                             <a href="portfolio-single-4.html" class="portfolio-list-item bg-image"
-                               style="background-image: url(public/frontend/img/porfolio/portfolio-10.jpg); background-position: 50% 50%">
+                               style="background-image: url({{ \App\Helpers\Helper::getValue('gallery_9') }}); background-position: 50% 50%">
                                 <div class="pli-hover">
                                     <div class="pli-caption">
-                                        <div><h2 class="pli-title">Zuula Maiden</h2></div>
+                                        <div><h2 class="pli-title">{{ \App\Helpers\Helper::getValue('gallery_9_title') }}</h2></div>
                                         <div><span class="pli-category">Photography, Motion</span></div>
                                     </div>
                                     <div class="pli-arrow"></div>

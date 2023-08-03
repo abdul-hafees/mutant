@@ -48,6 +48,14 @@ class MenuProvider
             [
                 'label' => 'Dashboard',
                 'icon'  => 'wb-dashboard',
+                'route' => 'admin.dashboard',
+                'visible' => function () {
+                    return true;
+                }
+            ],
+            [
+                'label' => 'Home',
+                'icon'  => 'wb-home',
                 'route' => 'admin.home',
                 'visible' => function () {
                     return true;

@@ -37,31 +37,8 @@ Route::namespace('App\Admin\Http\Controllers')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('/home', [HomeController::class, 'index'])->name('home');
-    Route::get('edit-profile', [ProfileController::class, 'editProfile'])->name('profile.edit-profile');
-    Route::post('edit-profile', [ProfileController::class, 'updateProfile'])->name('profile.update-profile');
-    Route::get('change-password', [ProfileController::class, 'changePassword'])->name('profile.change-password');
-    Route::post('change-password', [ProfileController::class, 'updatePassword'])->name('profile.update-password');
-//    Route::resource('admins', AdminController::class);
-    Route::resource('banners', BannerController::class);
-//    Route::resource('roles', RoleController::class);
-    Route::resource('categories', CategoryController::class);
-    Route::get('/categories/{categoryId}/sub-categories',
-        [CategoryController::class, 'getSubCategoriesByParent']);
-    Route::get('/categories/{categoryId}/get-attributes',
-        [CategoryController::class, 'getAttributeByCategory']);
-    Route::resource('sub-categories', SubCategoryController::class);
-    Route::resource('categories.subcategories', SubCategoryController::class);
-    Route::resource('attributes', AttributeController::class);
-    Route::get('/get-all-attribute-values',
-        [AttributeController::class, 'getAllAttributeValues']);
-    Route::resource('products', ProductsController::class);
-    Route::post('product-stock-details/update', [ProductsStockController::class, 'updateStockdetails']);
-    Route::get('products/delete-image/{imageId}', [ProductsController::class, 'deleteProductImage']);
-    Route::resource('attribute-values', AttributeValueController::class);
-    Route::resource('hubs', HubsController::class);
-    Route::resource('coupons', CouponsController::class);
-    Route::resource('orders', OrderController::class);
-
+    Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
+    Route::get('/home', [HomeController::class, 'home'])->name('home');
+    Route::post('/home', [HomeController::class, 'homeStore'])->name('home.store');
 });
 

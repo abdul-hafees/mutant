@@ -35,8 +35,6 @@
           </a>
 
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{ route('admin.profile.edit-profile') }}">Profile</a>
-              <a class="dropdown-item" href="{{ route('admin.profile.change-password') }}">Change Password</a>
             <a class="dropdown-item" href="{{ route('admin.logout') }}"
                onclick="event.preventDefault(); document.getElementById('form-logout-form').submit();">
               {{ __('Logout') }}
